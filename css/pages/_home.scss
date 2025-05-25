@@ -97,5 +97,47 @@ main{
         text-align: center;
         
     }
+
+    .combat-log {
+        #log-list {
+            padding:0;
+            margin:0;
+            max-height:200px;
+            overflow-y: auto;
+            border: 1px solid #eee;
+            padding: 10px;
+            background-color: #fff;
     
+            li {
+                padding:8px;
+                border-bottom:1px dotted #ccc;
+                font-size: 0.9em;
+    
+                &:last-child {
+                    border-bottom: none;
+                }
+    
+                &.player-turn{
+
+                    color: $primary-color;
+                    font-weight: bold;
+                }
+    
+                &.monster-turn{
+                    color: $danger-color;
+                    font-weight: bold;
+                }
+    
+                &.heal-action{
+                    color: $secondary-color;
+                }
+    
+                &.game-event {
+                    color: $dark-color;
+                    font-style: italic;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
