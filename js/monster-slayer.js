@@ -93,3 +93,19 @@ function updateSpecialAttackButton(){
         specialAttackBtn.textContent ='Attaque spéciale';
     }
 }
+
+function playerAttack(){
+    if (!isGameActive) return;
+    
+    const damage=getRandomNumber(8, 15);
+    monsterHealth -=damage;
+    
+    addLogMessage(`Vous attaquez le monstre et lui infligez ${damage} points de dégâts !`, 'player-action');
+    
+    updateHealthBars();
+    
+    if (!checkGameOver()){
+    
+        setTimeout(monsterAttack,1000);
+    }
+}
