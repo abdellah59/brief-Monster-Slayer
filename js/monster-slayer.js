@@ -1,3 +1,4 @@
+"use strict";
 
 let playerHealth =100;
 let monsterHealth = 100;
@@ -127,3 +128,21 @@ function playerSpecialAttack(){
             setTimeout(monsterAttack,1000);
     }
 }
+
+function playerHeal(){
+    if (!isGameActive) return;
+    
+    const healing =getRandomNumber(12,20);
+    const oldHealth =playerHealth;
+    playerHealth =Math.min(maxHealth, playerHealth + healing);
+    const actualHealing=playerHealth - oldHealth;
+    
+    addLogMessage(`Vous vous soignez et récupérez ${actualHealing} points de vie !`, 'player-action');
+    
+    updateHealthBars();
+    
+     setTimeout(monsterAttack,1000);
+
+}
+
+
