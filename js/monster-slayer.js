@@ -172,3 +172,18 @@ function monsterAttack(){
     checkGameOver();
 }
 
+startBtn.addEventListener('click',startGame);
+attackBtn.addEventListener('click',playerAttack);
+specialAttackBtn.addEventListener('click', playerSpecialAttack);
+healBtn.addEventListener('click',playerHeal);
+surrenderBtn.addEventListener('click', playerSurrender);
+
+document.addEventListener('DOMContentLoaded', function(){
+    updateHealthBars();
+    
+    actionButtons.classList.add('hidden');
+    
+    addLogMessage('Bienvenue dans Monster Slayer ! Cliquez sur "Jouer" pour commencer.', 'game-info');
+}
+
+);
