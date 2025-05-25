@@ -186,7 +186,7 @@ main {
   overflow: hidden;
   border: 1px solid #ccc;
 }
-.game-stats .stat-bar health-bar {
+.game-stats .stat-bar .health-bar {
   height: 100%;
   background-color: #2ecc71;
   transition: width 0.5s ease-in-out;
@@ -238,4 +238,8 @@ main {
   color: #2c3e50;
   font-style: italic;
   text-align: center;
+}
+
+.hidden {
+  display: none !important;
 }/*# sourceMappingURL=main.css.map */
