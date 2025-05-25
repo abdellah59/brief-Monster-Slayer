@@ -54,3 +54,11 @@ monster-slayer/
 ├── js ├── monster-salyer.js  // Fichier JavaScript contenant la logique du jeu
 
 └── README.md                 // Ce fichier
+
+## Améliorations Possibles
+
+* Ajouter des animations pour les attaques et les soins.
+* Introduire différents types de monstres avec des capacités variées.
+* Implémenter un système de tours plus visible.
+* Permettre au joueur de nommer son personnage.
+* Sauvegarder le meilleur score ou le nombre de victoires.
