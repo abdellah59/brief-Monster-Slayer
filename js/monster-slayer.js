@@ -81,3 +81,15 @@ function startGame(){
     logList.innerHTML ='';
     addLogMessage('Le combat commence ! Bonne chance !', 'game-info');
 }
+
+function updateSpecialAttackButton(){
+
+    if(specialAttackCooldown > 0){
+        specialAttackBtn.disabled =true;
+        specialAttackBtn.textContent=`Attaque spéciale (${specialAttackCooldown})`;
+    } else {
+
+         specialAttackBtn.disabled=false;
+        specialAttackBtn.textContent ='Attaque spéciale';
+    }
+}
