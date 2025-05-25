@@ -1,0 +1,147 @@
+body {
+
+    font-family: $font-stack;
+    background-color: $light-color;
+    color: $dark-color;
+    margin: 0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: $primary-color;
+    color: $light-color;
+    padding:20px;
+    text-align:center;
+    width:100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h1{
+        margin: 0 0 10px 0;
+    }
+
+}
+
+main{
+    flex: 1;
+    width:90%;
+    max-width:800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius:8px;
+}
+
+#game-ui{
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+
+    article{
+        border:1px solid #ddd;
+        padding:15px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+
+        h2 {
+            margin-top:0;
+            color: $primary-color;
+            border-bottom:2px solid $primary-color;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.game-stats{
+    .stat-bar{
+        margin-bottom: 15px;
+
+        h3{
+            margin:0 0 5px 0;
+            font-size: 1.1em;
+        }
+
+        .health-bar-container{
+            background-color:#e0e0e0;
+            border-radius: 5px;
+            height: 25px;
+            overflow: hidden;
+            border:1px solid #ccc;
+        }
+        .health-bar{
+            height: 100%;
+            background-color:$secondary-color;
+            transition: width 0.5s ease-in-out;
+            text-align:center;
+            line-height:25px;
+            color:$light-color;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: right;
+            margin: 5px 0 0;
+            font-size: 0.9em;
+        }
+    }
+
+    #monster-health-bar{
+        background-color:$danger-color;
+    }
+
+    .game-controls{
+        text-align: center;
+        
+    }
+
+    .combat-log {
+        #log-list {
+            padding:0;
+            margin:0;
+            max-height:200px;
+            overflow-y: auto;
+            border: 1px solid #eee;
+            padding: 10px;
+            background-color: #fff;
+    
+            li {
+                padding:8px;
+                border-bottom:1px dotted #ccc;
+                font-size: 0.9em;
+    
+                &:last-child {
+                    border-bottom: none;
+                }
+    
+                &.player-turn{
+
+                    color: $primary-color;
+                    font-weight: bold;
+                }
+    
+                &.monster-turn{
+                    color: $danger-color;
+                    font-weight: bold;
+                }
+    
+                &.heal-action{
+                    color: $secondary-color;
+                }
+    
+                &.game-event {
+                    color: $dark-color;
+                    font-style: italic;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none !important;
+}
