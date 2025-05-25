@@ -1,8 +1,11 @@
 #start-btn {
-    align-self: center;
     @include button-style($secondary-color);
+    display: block;  
+    margin-left: auto;   
+    margin-right: auto;  
     font-size: 1.2em;
-    padding: 12px 25px;
+    padding: 12px 25px;    
+
 }
 
 
