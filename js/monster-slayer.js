@@ -145,4 +145,30 @@ function playerHeal(){
 
 }
 
+function playerSurrender(){
+    if (!isGameActive)return;
+    
+    addLogMessage('Vous abandonnez le combat...', 'game-over');
+
+    endGame();
+}
+
+function monsterAttack(){
+    if (!isGameActive) return;
+    
+    const damage=getRandomNumber(6,12);
+    playerHealth -=damage;
+    
+    addLogMessage(`Le monstre vous attaque et vous inflige ${damage} points de dégâts !`, 'monster-action');
+    
+    if (specialAttackCooldown > 0){
+
+         specialAttackCooldown--;
+
+        updateSpecialAttackButton();
+    }
+    
+    updateHealthBars();
+    checkGameOver();
+}
 
