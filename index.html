@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -23,10 +23,29 @@
 </head>
 
 <body>
+  <header>
+    <h1>Monster Slayer</h1>
+</header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+<main>
+    <section id="game-ui" aria-label="Interface du jeu">
+
+        <article class="game-stats" aria-labelledby="stats-heading">
+            <h2 id="stats-heading">Etat du joueur et du Monstre</h2>
+
+            <div class="stat-bar">
+
+                <h3>Joueur</h3>
+                <div class="health-bar-container">
+                <div id="player-health-bar" class="health-bar" style="width: 100%;"></div>
+                <p><span id="player-health-value">100</span> / 100</p>
+
+            </div>
+        </article>
+
+    </section>
+</main>
+  <script src="./js/app.js"></script>
 
 </body>
 
