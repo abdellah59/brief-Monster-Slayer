@@ -65,12 +65,32 @@ main{
             font-size: 1.1em;
         }
 
-        .health-bar-container {
+        .health-bar-container{
             background-color:#e0e0e0;
             border-radius: 5px;
             height: 25px;
             overflow: hidden;
             border:1px solid #ccc;
         }
+        health-bar{
+            height: 100%;
+            background-color:$secondary-color;
+            transition: width 0.5s ease-in-out;
+            text-align:center;
+            line-height:25px;
+            color:$light-color;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: right;
+            margin: 5px 0 0;
+            font-size: 0.9em;
+        }
     }
+
+    #monster-health-bar{
+        background-color:$danger-color;
+    }
+    
 }
