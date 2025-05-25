@@ -33,3 +33,12 @@ function updateHealthBars(){
     playerHealthValue.textContent =Math.max(0, playerHealth);
     monsterHealthValue.textContent =Math.max(0,monsterHealth);
 }
+
+function addLogMessage(message,type){
+    const listItem= document.createElement('li');
+    listItem.textContent =message;
+    listItem.className =type;
+    logList.appendChild(listItem);
+    
+    logList.scrollTop =logList.scrollHeight;
+}
