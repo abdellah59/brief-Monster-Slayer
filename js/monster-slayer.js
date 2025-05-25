@@ -63,3 +63,21 @@ function endGame(){
     startBtn.textContent ='Rejouer';
     startBtn.style.display='block';
 }
+
+
+function startGame(){
+
+    playerHealth=100;
+    monsterHealth=100;
+    isGameActive =true;
+    specialAttackCooldown =0;
+    
+    updateHealthBars();
+    updateSpecialAttackButton();
+    
+    startBtn.style.display ='none';
+    actionButtons.classList.remove('hidden');
+    
+    logList.innerHTML ='';
+    addLogMessage('Le combat commence ! Bonne chance !', 'game-info');
+}
