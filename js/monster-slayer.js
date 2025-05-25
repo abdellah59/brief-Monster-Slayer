@@ -21,3 +21,15 @@ function getRandomNumber(min,max){
 
     return Math.floor(Math.random() * (max- min+ 1))+ min;
 }
+
+function updateHealthBars(){
+
+    const playerPercentage =Math.max(0,(playerHealth / maxHealth) *100);
+    const monsterPercentage = Math.max(0, (monsterHealth / maxHealth)* 100);
+    
+    playerHealthBar.style.width = playerPercentage +'%';
+    monsterHealthBar.style.width = monsterPercentage+ '%';
+    
+    playerHealthValue.textContent =Math.max(0, playerHealth);
+    monsterHealthValue.textContent =Math.max(0,monsterHealth);
+}
