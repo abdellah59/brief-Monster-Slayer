@@ -109,3 +109,21 @@ function playerAttack(){
         setTimeout(monsterAttack,1000);
     }
 }
+
+function playerSpecialAttack(){
+    if (!isGameActive || specialAttackCooldown > 0) return;
+    
+    const damage=getRandomNumber(15, 25);
+    monsterHealth -=damage;
+    specialAttackCooldown=3; 
+    
+    addLogMessage(`Attaque spéciale ! Vous infligez ${damage} points de dégâts critiques !`, 'player-action');
+    
+    updateHealthBars();
+    updateSpecialAttackButton();
+    
+    if (!checkGameOver()){
+
+            setTimeout(monsterAttack,1000);
+    }
+}
