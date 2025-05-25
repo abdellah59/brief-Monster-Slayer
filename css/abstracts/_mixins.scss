@@ -10,4 +10,16 @@
     font-size: 1em;
     transition: background-color 0.3s ease;
 
+
+    &:hover{
+
+        background-color: darken($bg-color, 10%);
+    }
+
+    &:disabled{
+        
+        background-color: lighten($bg-color, 20%);
+        cursor: not-allowed;
+    }
+
 }
