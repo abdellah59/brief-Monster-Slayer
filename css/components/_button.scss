@@ -1,0 +1,32 @@
+#start-btn {
+    align-self: center;
+    @include button-style($secondary-color);
+    font-size: 1.2em;
+    padding: 12px 25px;
+}
+
+
+#action-buttons{
+
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    button{
+        @include button-style();
+    }
+
+    #attack-btn{
+        @include button-style($warning-color, $dark-color);
+    }
+    #special-attack-btn{
+        @include button-style($danger-color);
+    }
+    #heal-btn{
+        @include button-style($secondary-color);
+    }
+    #surrender-btn{
+        @include button-style($dark-color);
+    }
+}
