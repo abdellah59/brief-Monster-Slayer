@@ -42,3 +42,17 @@ function addLogMessage(message,type){
     
     logList.scrollTop =logList.scrollHeight;
 }
+
+function checkGameOver(){
+    if (playerHealth<= 0) {
+        addLogMessage('Vous avez été vaincu par le monstre !', 'game-over');
+        endGame();
+            return true;
+
+    } else if(monsterHealth <= 0){
+        addLogMessage('Félicitations ! Vous avez vaincu le monstre !', 'game-over');
+        endGame();
+        return true;
+    }
+        return false;
+}
