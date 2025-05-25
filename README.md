@@ -62,3 +62,21 @@ monster-slayer/
 * Implémenter un système de tours plus visible.
 * Permettre au joueur de nommer son personnage.
 * Sauvegarder le meilleur score ou le nombre de victoires.
+
+## Outils Utilisés
+
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/TAILWIND-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+- ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
+
+## Licence
+Ce projet est distribué sous la **Licence MIT**. Vous êtes libres de copier, modifier et redistribuer ce code à condition d’inclure le texte de la licence et les mentions de copyright.
+
+Ce projet a été réalisé dans le cadre d'un exercice pratique visant à mettre en application les compétences en JavaScript, HTML et SCSS pour créer une interface interactive et utile.
+
+## Auteurs 
+
+- **GitHub**: [Abdellah](https://github.com/abdellah59)
