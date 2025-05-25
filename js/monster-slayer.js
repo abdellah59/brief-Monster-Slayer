@@ -56,3 +56,10 @@ function checkGameOver(){
     }
         return false;
 }
+
+function endGame(){
+    isGameActive =false;
+    actionButtons.classList.add('hidden');
+    startBtn.textContent ='Rejouer';
+    startBtn.style.display='block';
+}
