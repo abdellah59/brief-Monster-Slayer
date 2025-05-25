@@ -55,3 +55,22 @@ main{
         }
     }
 }
+
+.game-stats{
+    .stat-bar{
+        margin-bottom: 15px;
+
+        h3{
+            margin:0 0 5px 0;
+            font-size: 1.1em;
+        }
+
+        .health-bar-container {
+            background-color:#e0e0e0;
+            border-radius: 5px;
+            height: 25px;
+            overflow: hidden;
+            border:1px solid #ccc;
+        }
+    }
+}
